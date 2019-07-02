@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/square"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinnersession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edittextusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Username"
+        android:textColor="#FFF"
+        android:textSize="14dp"
+        android:textAlignment="center"/>
+    <EditText
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edittextpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextusername"
+        android:hint="Enter your Password"
+        android:textColor="#FFF"
+        android:textSize="14dp"
+        android:inputType="textPassword"
+        android:textAlignment="center"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        />
+    <TextView
+        android:id="@+id/txthome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="15dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <ProgressBar
+        android:padding="10dp"
+        android:id="@+id/progbar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>
+</ScrollView>

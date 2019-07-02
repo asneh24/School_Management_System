@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendanceRecord"
+    android:background="@drawable/background3">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/school_name"
+        android:textAlignment="center"
+        android:textColor="#0013FF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_below="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/school_subheading"
+        android:textAlignment="center"
+        android:textColor="#FF5D00"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STUDENT ATTENDANCE"
+        android:layout_below="@+id/subheading"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txtviewstdname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutus"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000CFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+    <ScrollView
+        android:layout_below="@+id/txtviewstdname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below="@+id/txtviewstdname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:id="@+id/linearjan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerjan"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewjan"
+                    android:layout_width="0dp"
+                    android:textColor="#000"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/linearjan"
+                android:id="@+id/linearfeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerfeb"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewfeb"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearmar"
+                android:layout_below="@+id/linearfeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnermar"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewmar"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearapr"
+                android:layout_below="@+id/linearmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerapr"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewapr"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearmay"
+                android:layout_below="@+id/linearapr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnermay"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewmay"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearjun"
+                android:layout_below="@id/linearmay">
+                <Spinner
+                    android:id="@+id/spinnerjun"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewjun"
+                    android:layout_width="0dp"
+                    android:textColor="#000"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearjul"
+                android:layout_below="@+id/linearjun">
+                <Spinner
+                    android:id="@+id/spinnerjul"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewjul"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearaug"
+                android:layout_below="@+id/linearjul"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinneraug"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewaug"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearsep"
+                android:layout_below="@+id/linearaug">
+                <Spinner
+                    android:id="@+id/spinnersep"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewsep"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearoct"
+                android:layout_below="@+id/linearsep">
+
+                <Spinner
+                    android:id="@+id/spinneroct"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewoct"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearnov"
+                android:layout_below="@+id/linearoct"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnernov"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewnov"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/lineardec"
+                android:layout_below="@+id/linearnov">
+
+                <Spinner
+                    android:id="@+id/spinnerdec"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtviewdec"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="Working Days and Absent days"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

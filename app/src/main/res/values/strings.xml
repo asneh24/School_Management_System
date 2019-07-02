@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hasdeo Public School</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="server">103.48.51.214:1232</string>
+    <string name="database">admin_ED_hsp</string>
+    <string name="username">EDU_HSP</string>
+    <string name="password">EduHSP@2016</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="school_name">HASDEO PUBLIC SCHOOL</string>
+    <string name="school_subheading">CHANDRAVALI DEVI JHAJHARIA MEMORIAL</string>
+</resources>

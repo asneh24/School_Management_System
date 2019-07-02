@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentFeedback"
+    android:background="@drawable/background3">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/school_name"
+        android:textAlignment="center"
+        android:textColor="#0013FF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_below="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/school_subheading"
+        android:textAlignment="center"
+        android:textColor="#FF5D00"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STUDENT FEEDBACK FORM"
+        android:layout_below="@+id/subheading"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/txtviewstdname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutus"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000CFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/edittextremark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textColorHint="#828285"
+        android:layout_below="@+id/txtviewstdname"
+        android:hint="Enter FeedBack or Suggesstion"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"/>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#FFF"
+        android:layout_below="@+id/edittextremark"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#000FFF"/>
+
+</RelativeLayout>

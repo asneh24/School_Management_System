@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentLogin"
+    android:background="@drawable/background3">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/school_name"
+        android:textAlignment="center"
+        android:textColor="#0013FF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_below="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/school_subheading"
+        android:textAlignment="center"
+        android:textColor="#FF5D00"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STUDENT LOGIN"
+        android:layout_below="@+id/subheading"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aboutus"
+        android:gravity="center">
+
+        <include layout="@layout/loginmaterial"
+            android:layout_width="280dp"
+            android:layout_height="300dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
